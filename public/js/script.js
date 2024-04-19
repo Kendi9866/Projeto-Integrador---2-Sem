@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!isDown) return;
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft;
-    const walk = (x - startX) * 1; // O fator de multiplicação 3 aumenta a sensibilidade do arrasto
+    const walk = (x - startX) * 1; 
     slider.scrollLeft = scrollLeft - walk;
   });
 });
