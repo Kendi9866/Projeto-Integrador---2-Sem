@@ -41,6 +41,10 @@ app.get("/", (req, res) => {
   })
 });
 
+app.get('/carrinho', (req,res)=>{
+  res.render('cart')
+})
+
 
 app.get("/cadastrarProduto", (req, res) => {
   res.render("cadProduto");
